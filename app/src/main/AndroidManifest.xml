@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.producer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DramaLookActivity"></activity>
+        <activity android:name=".DramaWriteActivity" />
+        <activity android:name=".MovieLookActivity" />
+        <activity android:name=".MovieWriteActivity" />
+        <activity android:name=".DramaActivity" />
+        <activity android:name=".MovieActivity" />
+        <activity android:name=".MapActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDDX5vVec5Zvgfrnw1pL8wJH-_i1nD5BYQ" />
+
+        <activity android:name=".BottomTabActivity" />
+        <activity android:name=".Fragment3" />
+        <activity android:name=".Fragment2" />
+        <activity android:name=".Fragment1" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
